@@ -23,7 +23,7 @@ client.on('guildMemberAdd', member => {
             welcomeEmbed.setFooter(`${client.user.username} `)
             welcomeChannel.send(welcomeEmbed)
         }else{
-            welcomeEmbed.setColor(colors.aqua)
+            welcomeEmbed.setColor(colors.purple)
             welcomeEmbed.setAuthor(`${member.guild.name}`)
             welcomeEmbed.setDescription(`Hi <@${member.user.id}> Welcome to Bazam Lavat Server , Do not forget to visit ${member.guild.channels.cache.get(targetchannel).toString()} Channel , baby`)
             welcomeEmbed.setThumbnail(member.user.displayAvatarURL())
