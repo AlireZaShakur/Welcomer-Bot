@@ -16,7 +16,7 @@ client.on('guildMemberAdd', member => {
 
         if(member.user.bot){
 
-            welcomeEmbed.setColor(colors.yellow)
+            welcomeEmbed.setColor(colors.white)
             welcomeEmbed.setAuthor(`${member.guild.name}`)
             welcomeEmbed.setDescription(`Hi <@${member.user.id}> Welcome to Bazam Lavat Server , But you must not forget that you are a bot`)
             welcomeEmbed.setThumbnail(member.user.displayAvatarURL())
