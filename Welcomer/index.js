@@ -18,16 +18,16 @@ client.on('guildMemberAdd', member => {
 
             welcomeEmbed.setColor(colors.yellow)
             welcomeEmbed.setAuthor(`${member.guild.name}`)
-            welcomeEmbed.setDescription(`سلام <@${member.user.id}> به سرور ما خوش اومدی حتما یه سر بزن به ${member.guild.channels.cache.get(targetchannel).toString()} امیدوارم از سرورمون خوشت بیاد`)
+            welcomeEmbed.setDescription(`Hi <@${member.user.id}> Welcome to Bazam Lavat Server , But you must not forget that you are a bot`)
             welcomeEmbed.setThumbnail(member.user.displayAvatarURL())
-            welcomeEmbed.setFooter(`${client.user.username} (=`)
+            welcomeEmbed.setFooter(`${client.user.username} `)
             welcomeChannel.send(welcomeEmbed)
         }else{
             welcomeEmbed.setColor(colors.aqua)
             welcomeEmbed.setAuthor(`${member.guild.name}`)
-            welcomeEmbed.setDescription(`سلام <@${member.user.id}> به سرور ما خوش اومدی حتما یه سر بزن به ${member.guild.channels.cache.get(targetchannel).toString()} امیدوارم از سرورمون خوشت بیاد`)
+            welcomeEmbed.setDescription(`Hi <@${member.user.id}> Welcome to Bazam Lavat Server , Do not forget to visit ${member.guild.channels.cache.get(targetchannel).toString()} Channel , baby`)
             welcomeEmbed.setThumbnail(member.user.displayAvatarURL())
-            welcomeEmbed.setFooter(`${client.user.username}  (=`)
+            welcomeEmbed.setFooter(`${client.user.username}  I hope you have fun`)
             welcomeChannel.send(welcomeEmbed)
         }
     }else{
